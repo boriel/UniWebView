@@ -4,7 +4,7 @@ DSTDIR="../../build/Android"
 export ANT_OPTS=-Dfile.encoding=UTF8
 
 # Change the path to your 'android' command
-android update project -p . --target 1
+android update project -p . --target android-17
 
 mkdir -p libs
 cp $UNITYLIBS libs
