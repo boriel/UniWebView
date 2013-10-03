@@ -39,6 +39,7 @@ import android.webkit.WebChromeClient;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
+import android.webkit.JavascriptInterface;
 import android.widget.FrameLayout;
 import android.widget.ProgressBar;
 import java.util.concurrent.SynchronousQueue;
@@ -69,6 +70,7 @@ public class WebViewPlugin
             mMessageQueue = new SynchronousQueue<String>();
         }
 
+	@JavascriptInterface
         public void pushMessage(String message) {
             Log.d("WebView", message);
             try {
