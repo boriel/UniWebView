@@ -40,6 +40,7 @@ import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.webkit.JavascriptInterface;
+import android.graphics.Color;
 import android.widget.FrameLayout;
 import android.widget.ProgressBar;
 import java.util.concurrent.SynchronousQueue;
@@ -154,6 +155,8 @@ public class WebViewPlugin
     	webSettings.setDomStorageEnabled(true);
     	mWebView.setScrollBarStyle(WebView.SCROLLBARS_INSIDE_OVERLAY);
         mWebView.setVerticalScrollbarOverlay(true);
+        
+        mWebView.setBackgroundColor(Color.argb(1, 255, 255, 255));
 	}
 
 	private void SetLayoutParams(Activity a) {
