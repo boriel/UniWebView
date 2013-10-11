@@ -156,7 +156,7 @@ public class WebViewPlugin
     	mWebView.setScrollBarStyle(WebView.SCROLLBARS_INSIDE_OVERLAY);
         mWebView.setVerticalScrollbarOverlay(true);
         
-        mWebView.setBackgroundColor(Color.argb(1, 255, 255, 255));
+        mWebView.setBackgroundColor(0x00000000);
 	}
 
 	private void SetLayoutParams(Activity a) {
